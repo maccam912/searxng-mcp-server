@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "searxng-mcp-server"
+name = "maccam912-searxng-mcp-server"
 description = ''
 readme = "README.md"
 requires-python = ">=3.10"
