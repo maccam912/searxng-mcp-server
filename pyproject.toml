@@ -8,3 +8,6 @@ dependencies = [
     "httpx>=0.28.1",
     "mcp>=1.2.0",
 ]
+
+[project.scripts]
+searxng-mcp-server = "server:main"
