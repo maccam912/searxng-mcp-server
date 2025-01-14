@@ -5,7 +5,7 @@
         "run",
         "https://raw.githubusercontent.com/maccam912/searxng-mcp-server/refs/heads/main/server.py",
         "--url",
-        "https://searxng.k3s.koski.co"
+        "https://searxng.example.com"
       ]
     }
 ```
