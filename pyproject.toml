@@ -20,9 +20,6 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
 ]
 dependencies = [
-    "anyio>=3.7.1",
-    "click>=8.1.8",
-    "httpx>=0.24.1",
     "mcp>=1.2.0",
 ]
 dynamic = ["version"]
