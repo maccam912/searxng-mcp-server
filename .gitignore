@@ -1,2 +1,6 @@
 uv.lock
 .venv
+.vscode
+.pytest_cache
+.coverage
+**/*.pyc
