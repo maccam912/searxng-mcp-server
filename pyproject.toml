@@ -25,7 +25,7 @@ dependencies = [
 dynamic = ["version"]
 
 [project.scripts]
-searxng-mcp-server = "searxng_mcp_server.server:main"
+searxng-mcp-server = "searxng_mcp_server.server:mcp"
 
 [project.urls]
 Documentation = "https://github.com/unknown/searxng-mcp-server#readme"
