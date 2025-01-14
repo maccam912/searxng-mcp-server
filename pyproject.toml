@@ -1,66 +1,10 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
 [project]
-name = "maccam912-searxng-mcp-server"
-description = ''
+name = "searxng-mcp-server"
+version = "0.1.0"
+description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.10"
-license = "MIT"
-keywords = []
-authors = [
-  { name = "Matt Koski", email = "maccam912@gmail.com" },
-]
-classifiers = [
-  "Development Status :: 4 - Beta",
-  "Programming Language :: Python",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: Implementation :: CPython",
-]
+requires-python = ">=3.11"
 dependencies = [
     "httpx>=0.28.1",
     "mcp>=1.2.0",
 ]
-dynamic = ["version"]
-
-[project.scripts]
-maccam912-searxng-mcp-server = "searxng_mcp_server.server:main"
-
-[project.urls]
-Documentation = "https://github.com/unknown/searxng-mcp-server#readme"
-Issues = "https://github.com/unknown/searxng-mcp-server/issues"
-Source = "https://github.com/unknown/searxng-mcp-server"
-
-[tool.hatch.version]
-path = "searxng_mcp_server/__about__.py"
-
-[tool.hatch.envs.default]
-dependencies = [
-  "pytest",
-  "pytest-cov",
-]
-[tool.hatch.envs.default.scripts]
-cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=searxng_mcp_server --cov=tests {args}"
-no-cov = "cov --no-cov {args}"
-
-[[tool.hatch.envs.test.matrix]]
-python = ["37", "38", "39", "310", "311"]
-
-[tool.coverage.run]
-branch = true
-parallel = true
-omit = [
-  "searxng_mcp_server/__about__.py",
-]
-
-[tool.coverage.report]
-exclude_lines = [
-  "no cov",
-  "if __name__ == .__main__.:",
-  "if TYPE_CHECKING:",
-]
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/searxng_mcp_server"]
