@@ -26,7 +26,7 @@ dependencies = [
 dynamic = ["version"]
 
 [project.scripts]
-searxng-mcp-server = "searxng_mcp_server.server:main"
+maccam912-searxng-mcp-server = "searxng_mcp_server.server:main"
 
 [project.urls]
 Documentation = "https://github.com/unknown/searxng-mcp-server#readme"
@@ -61,3 +61,6 @@ exclude_lines = [
   "if __name__ == .__main__.:",
   "if TYPE_CHECKING:",
 ]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/searxng_mcp_server"]
