@@ -1,3 +1,10 @@
+# /// script
+# dependencies = [
+#   "mcp",
+#   "httpx",
+# ]
+# ///
+
 import argparse
 import httpx
 import logging
