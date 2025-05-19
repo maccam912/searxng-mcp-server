@@ -1,4 +1,4 @@
-```   
+```
  "searxng-mcp-server": {
       "command": "uv",
       "args": [
