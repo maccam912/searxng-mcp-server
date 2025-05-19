@@ -1,7 +1,7 @@
 [project]
 name = "searxng-mcp-server"
 version = "0.1.0"
-description = "Add your description here"
+description = "Model Control Protocol (MCP) server for SearXNG search engine"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
